@@ -1,0 +1,100 @@
+:root {
+  /* Core colors */
+  --border: #e5e7eb;
+  --muted: #6b7280;
+  --danger: #dc2626;
+  --bg: #ffffff;
+  --accent: #111827;
+
+  /* Tokens */
+  --background-body: #f8fafc;
+  --input-border: #d1d5db;
+  --input-focus-border: #9ca3af;
+  --input-focus-shadow: rgba(17, 24, 39, 0.04);
+  --button-secondary-bg: #f3f4f6;
+  --button-secondary-text: var(--accent);
+  --text-primary: var(--accent);
+  --shadow-light: rgba(0, 0, 0, 0.03);
+  --text-white: #ffffff;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial;
+  background: var(--background-body);
+  padding: 20px;
+}
+
+.form-card {
+  max-width: 500px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  box-shadow: 0 1px 2px var(--shadow-light);
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-primary);
+}
+
+.field-row {
+  margin-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.field-label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--text-primary);
+}
+
+.input {
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--input-border);
+  font-size: 14px;
+  outline: none;
+  color: var(--text-primary);
+  background: var(--bg);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 3px var(--input-focus-shadow);
+  border-color: var(--input-focus-border);
+}
+
+.actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.button-primary {
+  background: var(--accent);
+  color: var(--text-white);
+}
+
+.button-secondary {
+  background: var(--button-secondary-bg);
+  color: var(--button-secondary-text);
+}
+
+.error {
+  color: var(--danger);
+  margin-top: 6px;
+  font-size: 13px;
+}
